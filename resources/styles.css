@@ -1,0 +1,9 @@
+.center {
+  margin: auto;
+  padding: 10px;
+}
+
+.mdl-card {
+  padding: 30px;
+  background: #ffffff;
+}
