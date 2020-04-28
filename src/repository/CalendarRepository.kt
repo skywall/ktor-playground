@@ -11,7 +11,7 @@ class CalendarRepository(
 ) {
     suspend fun getForMonth(yearMonth: YearMonth): List<UserMonthCalendar> {
         val startDay = yearMonth.atDay(1)
-        val endDay = yearMonth.atEndOfMonth().plusDays(1)
+        val endDay = yearMonth.atEndOfMonth()
 
         val result = mutableListOf<UserMonthCalendar>()
 

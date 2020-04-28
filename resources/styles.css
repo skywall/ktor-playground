@@ -7,3 +7,15 @@
   padding: 30px;
   background: #ffffff;
 }
+
+.login_error {
+  color: red;
+}
+
+.vacation_cell {
+  background: #7777ee;
+}
+
+.user_cell {
+  font-weight: bold;
+}

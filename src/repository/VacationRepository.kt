@@ -13,21 +13,21 @@ class VacationRepository(userRepository: UserRepository) {
         Vacation(
             "e9ae4597-8ce8-4a7b-a587-25b5afee668b",
             VacationType.DOCTOR,
-            userRepository.getByName("bob"),
+            userRepository.getByName("Bob"),
             LocalDate.of(2020, Month.APRIL, 1),
             LocalDate.of(2020, Month.APRIL, 1)
         ),
         Vacation(
             "209e3589-92cf-4ebb-8dd1-90b992942600",
             VacationType.HOME_OFFICE,
-            userRepository.getByName("bob"),
+            userRepository.getByName("Bob"),
             LocalDate.of(2020, Month.APRIL, 5),
             LocalDate.of(2020, Month.APRIL, 7)
         ),
         Vacation(
             "20f21701-55bb-4ae3-96bc-1bf04204edfa",
             VacationType.DOCTOR,
-            userRepository.getByName("don"),
+            userRepository.getByName("Bob"),
             LocalDate.of(2020, Month.MAY, 5),
             LocalDate.of(2020, Month.MAY, 5)
         )
