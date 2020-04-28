@@ -119,10 +119,12 @@ fun Route.webRouter() {
     authenticate(Constant.SESSION_AUTH) {
         get("/dashboard") {
             val session: FunSession = call.sessions.get(Constant.SESSION_NAME) as? FunSession ?: FunSession("test")
+
             val year = call.request.queryParameters["year"]?.toInt() ?: YearMonth.now().year
             val month = call.request.queryParameters["month"]?.toInt() ?: YearMonth.now().monthValue
             val yearMonth = YearMonth.of(year, month)
             val currentMonthDays = yearMonth.atEndOfMonth().dayOfMonth
+
             val vacations = R.calendarRepository.getForMonth(yearMonth)
 
             call.respondHtml {
