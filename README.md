@@ -9,7 +9,7 @@ Simple server application to demonstrate following features:
 - Fat Jar build and docker run environment
 - [Material Design Lite](getmdl.io) templating system
 
-Repository contains set of branches where branch with prefix `1-` is simplest one.
+Repository contains set of branches where branch with prefix `1-` contains simplest code.
 
 ## How to run in docker
 
