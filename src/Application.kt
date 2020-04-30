@@ -22,6 +22,7 @@ fun main(args: Array<String>) {
     embeddedServer(Netty, commandLineEnvironment(args)).start(wait = true)
 }
 
+@kotlin.jvm.JvmOverloads
 fun Application.module() {
     install(DefaultHeaders)
     install(CallLogging)
