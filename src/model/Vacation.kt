@@ -11,7 +11,6 @@ data class Vacation(
 )
 
 enum class VacationType {
-    SICK_DAY,
     HOME_OFFICE,
     DOCTOR,
 }
